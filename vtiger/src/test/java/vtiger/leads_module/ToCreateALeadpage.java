@@ -36,7 +36,7 @@ public class ToCreateALeadpage extends BaseClass {
 		
 		Assert.assertTrue(actualLeadInfo.contains(leadLastName));
 		System.out.println("Pass: the lead has been created");
-		System.out.println("Hello");
+		
 	}
 
 }
