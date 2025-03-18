@@ -5,38 +5,49 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+/**
+ * This is an object repository for Login Page
+ * @author Rikki Panwar
+ *
+ */
 
-public LoginPage(WebDriver driver) {
-	PageFactory.initElements(driver,this);
-}
-	@FindBy(name="user_name")
-	private WebElement username_textfield;
+public class LoginPage {
+	public LoginPage(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+	}
 	
+	@FindBy(name = "user_name")
+	private WebElement username_Textfield;
+
+	@FindBy(name = "user_password")
+	private WebElement password_Textfield;
 	
-	@FindBy(name="user_password")
-	private WebElement password_textfield;
-	
-	@FindBy(id="submitButton")
+	@FindBy(id = "submitButton")
 	private WebElement loginButton;
 	
-	public WebElement getUsername_textfield() {
-		return username_textfield;
+
+	public WebElement getUsername_Textfield() {
+		return username_Textfield;
 	}
 
-	public WebElement getPassword_textfield() {
-		return password_textfield;
+	public WebElement getPassword_Textfield() {
+		return password_Textfield;
 	}
 
 	public WebElement getLoginButton() {
 		return loginButton;
 	}
-
-
-	public void loginAction(String username,String password) {
-		username_textfield.sendKeys(username);
-		password_textfield.sendKeys(password);
+	
+	/**
+	 * This method is used login an user
+	 * @param username
+	 * @param password
+	 */
+	public void loginAction(String username, String password) {
+		username_Textfield.sendKeys(username);
+		password_Textfield.sendKeys(password);
 		loginButton.click();
-	}
 		
 	}
+
+}

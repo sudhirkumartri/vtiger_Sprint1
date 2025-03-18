@@ -6,17 +6,18 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class CreatingNewOrganizationPage {
+	
 	public CreatingNewOrganizationPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-
-	@FindBy(name = "accountname")
+	
+	@FindBy(name="accountname")
 	private WebElement organizationNameTextField;
 	
-	@FindBy(xpath = "//input[@title=\"Save [Alt+S]\"]")
+	@FindBy(xpath="//input[@title=\"Save [Alt+S]\"]")
 	private WebElement organizationSaveButton;
 
-	public WebElement getOrganizationNameTextField() {
+	public WebElement getOrganisationNameTextField() {
 		return organizationNameTextField;
 	}
 

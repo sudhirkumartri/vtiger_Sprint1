@@ -6,11 +6,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class CreatingNewCampaignPage {
-
-	public  CreatingNewCampaignPage(WebDriver driver) {
+	
+	public CreatingNewCampaignPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-
+	
 	@FindBy(name="campaignname")
 	private WebElement campaignNameTextField;
 	
@@ -32,6 +32,5 @@ public class CreatingNewCampaignPage {
 	public void clickOnSaveButton() {
 		campaignSaveButton.click();
 	}
-
 
 }

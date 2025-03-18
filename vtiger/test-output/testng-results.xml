@@ -1,70 +1,225 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="0" failed="1" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-14T14:18:00 IST" name="Default suite" finished-at="2024-05-14T14:18:32 IST" duration-ms="32605">
+  <suite started-at="2024-06-27T10:16:56Z" name="Default suite" finished-at="2024-06-27T10:17:43Z" duration-ms="46616">
     <groups>
     </groups>
-    <test started-at="2024-05-14T14:18:00 IST" name="Default test" finished-at="2024-05-14T14:18:32 IST" duration-ms="32605">
-      <class name="vtiger.opportunity_module.ToCreateOpportunityTest">
-        <test-method is-config="true" signature="bs()[pri:0, instance:vtiger.opportunity_module.ToCreateOpportunityTest@61001b64]" started-at="2024-05-14T14:18:00 IST" name="bs" finished-at="2024-05-14T14:18:00 IST" duration-ms="13" status="PASS">
+    <test started-at="2024-06-27T10:16:56Z" name="Default test" finished-at="2024-06-27T10:17:43Z" duration-ms="46616">
+      <class name="vtiger.leads_module.ToCreateALeadTest">
+        <test-method is-config="true" signature="bs()[pri:0, instance:vtiger.leads_module.ToCreateALeadTest@4716be8b]" started-at="2024-06-27T10:16:56Z" name="bs" finished-at="2024-06-27T10:16:56Z" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bs -->
-        <test-method is-config="true" signature="bc()[pri:0, instance:vtiger.opportunity_module.ToCreateOpportunityTest@61001b64]" started-at="2024-05-14T14:18:00 IST" name="bc" finished-at="2024-05-14T14:18:03 IST" duration-ms="2900" status="PASS">
+        <test-method is-config="true" signature="bc()[pri:0, instance:vtiger.leads_module.ToCreateALeadTest@4716be8b]" started-at="2024-06-27T10:16:56Z" name="bc" finished-at="2024-06-27T10:16:59Z" duration-ms="2628" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bc -->
-        <test-method is-config="true" signature="bm()[pri:0, instance:vtiger.opportunity_module.ToCreateOpportunityTest@61001b64]" started-at="2024-05-14T14:18:03 IST" name="bm" finished-at="2024-05-14T14:18:05 IST" duration-ms="2623" status="PASS">
+        <test-method is-config="true" signature="bm()[pri:0, instance:vtiger.leads_module.ToCreateALeadTest@4716be8b]" started-at="2024-06-27T10:16:59Z" name="bm" finished-at="2024-06-27T10:17:01Z" duration-ms="2384" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bm -->
-        <test-method signature="createOpportunityAndVerifyOpportunity()[pri:0, instance:vtiger.opportunity_module.ToCreateOpportunityTest@61001b64]" started-at="2024-05-14T14:18:05 IST" name="createOpportunityAndVerifyOpportunity" finished-at="2024-05-14T14:18:29 IST" duration-ms="23661" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createOpportunityAndVerifyOpportunity -->
-        <test-method is-config="true" signature="am()[pri:0, instance:vtiger.opportunity_module.ToCreateOpportunityTest@61001b64]" started-at="2024-05-14T14:18:29 IST" name="am" finished-at="2024-05-14T14:18:30 IST" duration-ms="1438" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- am -->
-        <test-method is-config="true" signature="ac()[pri:0, instance:vtiger.opportunity_module.ToCreateOpportunityTest@61001b64]" started-at="2024-05-14T14:18:30 IST" name="ac" finished-at="2024-05-14T14:18:32 IST" duration-ms="1922" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ac -->
-        <test-method is-config="true" signature="as()[pri:0, instance:vtiger.opportunity_module.ToCreateOpportunityTest@61001b64]" started-at="2024-05-14T14:18:32 IST" name="as" finished-at="2024-05-14T14:18:32 IST" duration-ms="2" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="toCreateALeadAndVerifyTheLeadInformationTest()[pri:0, instance:vtiger.leads_module.ToCreateALeadTest@4716be8b]" started-at="2024-06-27T10:17:01Z" name="toCreateALeadAndVerifyTheLeadInformationTest" finished-at="2024-06-27T10:17:09Z" duration-ms="7538" status="SKIP">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.bidi.Connection.close()" because "this.connection" is null]]>
+              <![CDATA[null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.bidi.Connection.close()" because "this.connection" is null
-at vitiger.GenericUtility.BaseClass.as(BaseClass.java:85)
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.fail(Assert.java:103)
+at vtiger.leads_module.ToCreateALeadTest.toCreateALeadAndVerifyTheLeadInformationTest(ToCreateALeadTest.java:38)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:344)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toCreateALeadAndVerifyTheLeadInformationTest -->
+        <test-method is-config="true" signature="am()[pri:0, instance:vtiger.leads_module.ToCreateALeadTest@4716be8b]" started-at="2024-06-27T10:17:09Z" name="am" finished-at="2024-06-27T10:17:10Z" duration-ms="1345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- am -->
+        <test-method is-config="true" signature="bm()[pri:0, instance:vtiger.leads_module.ToCreateALeadTest@4716be8b]" started-at="2024-06-27T10:17:10Z" name="bm" finished-at="2024-06-27T10:17:12Z" duration-ms="2059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bm -->
+        <test-method signature="toCreateALeadAndVerifyTheLeadInformationTest()[pri:0, instance:vtiger.leads_module.ToCreateALeadTest@4716be8b]" started-at="2024-06-27T10:17:12Z" name="toCreateALeadAndVerifyTheLeadInformationTest" finished-at="2024-06-27T10:17:19Z" duration-ms="7123" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.fail(Assert.java:103)
+at vtiger.leads_module.ToCreateALeadTest.toCreateALeadAndVerifyTheLeadInformationTest(ToCreateALeadTest.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toCreateALeadAndVerifyTheLeadInformationTest -->
+        <test-method is-config="true" signature="am()[pri:0, instance:vtiger.leads_module.ToCreateALeadTest@4716be8b]" started-at="2024-06-27T10:17:19Z" name="am" finished-at="2024-06-27T10:17:21Z" duration-ms="1425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- am -->
+        <test-method is-config="true" signature="bm()[pri:0, instance:vtiger.leads_module.ToCreateALeadTest@4716be8b]" started-at="2024-06-27T10:17:21Z" name="bm" finished-at="2024-06-27T10:17:23Z" duration-ms="2198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bm -->
+        <test-method signature="toCreateALeadAndVerifyTheLeadInformationTest()[pri:0, instance:vtiger.leads_module.ToCreateALeadTest@4716be8b]" started-at="2024-06-27T10:17:23Z" name="toCreateALeadAndVerifyTheLeadInformationTest" finished-at="2024-06-27T10:17:30Z" duration-ms="7081" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.fail(Assert.java:103)
+at vtiger.leads_module.ToCreateALeadTest.toCreateALeadAndVerifyTheLeadInformationTest(ToCreateALeadTest.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toCreateALeadAndVerifyTheLeadInformationTest -->
+        <test-method is-config="true" signature="am()[pri:0, instance:vtiger.leads_module.ToCreateALeadTest@4716be8b]" started-at="2024-06-27T10:17:30Z" name="am" finished-at="2024-06-27T10:17:32Z" duration-ms="1402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- am -->
+        <test-method is-config="true" signature="bm()[pri:0, instance:vtiger.leads_module.ToCreateALeadTest@4716be8b]" started-at="2024-06-27T10:17:32Z" name="bm" finished-at="2024-06-27T10:17:34Z" duration-ms="2190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bm -->
+        <test-method signature="toCreateALeadAndVerifyTheLeadInformationTest()[pri:0, instance:vtiger.leads_module.ToCreateALeadTest@4716be8b]" started-at="2024-06-27T10:17:34Z" name="toCreateALeadAndVerifyTheLeadInformationTest" finished-at="2024-06-27T10:17:41Z" duration-ms="7077" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.fail(Assert.java:103)
+at vtiger.leads_module.ToCreateALeadTest.toCreateALeadAndVerifyTheLeadInformationTest(ToCreateALeadTest.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toCreateALeadAndVerifyTheLeadInformationTest -->
+        <test-method is-config="true" signature="am()[pri:0, instance:vtiger.leads_module.ToCreateALeadTest@4716be8b]" started-at="2024-06-27T10:17:41Z" name="am" finished-at="2024-06-27T10:17:42Z" duration-ms="1306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- am -->
+        <test-method is-config="true" signature="ac()[pri:0, instance:vtiger.leads_module.ToCreateALeadTest@4716be8b]" started-at="2024-06-27T10:17:42Z" name="ac" finished-at="2024-06-27T10:17:43Z" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ac -->
+        <test-method is-config="true" signature="as()[pri:0, instance:vtiger.leads_module.ToCreateALeadTest@4716be8b]" started-at="2024-06-27T10:17:43Z" name="as" finished-at="2024-06-27T10:17:43Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- as -->
-      </class> <!-- vtiger.opportunity_module.ToCreateOpportunityTest -->
+      </class> <!-- vtiger.leads_module.ToCreateALeadTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
